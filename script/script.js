@@ -1,28 +1,28 @@
 'use strict';
 
-if (4 === 4) {
-    console.log('Ok!');
-} else {
-    console.log('Error!');
-}
+let num = 50;
+
+//Цикли 1.
 /*
-const num = 150;
-(num === 50) ? console.log('Ok!') : console.log('Error!');
-*/
-
-const num = 50;
-
-switch (num) {
-    case 49:
-        console.log('Error');
-        break;
-    case 200:
-        console.log('Error');
-        break;
-    case 51:
-        console.log('Ok!');
-        break;
-    default:
-        console.log('No... No... No...');
-        break;
+while (num <= 55) {
+    console.log(num);
+    num++;
 }
+*/
+// Цикли 2
+/*
+do {
+    console.log(num);
+    num++;
+}
+while (num <= 55);*/
+
+// Цикли 3
+
+  for (let i = 1; i <= 10; i++) {
+      if (i === 6) {
+          //break;
+          continue;
+      }
+      console.log(i);
+  }
