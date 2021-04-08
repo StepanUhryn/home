@@ -1,27 +1,51 @@
 'use strict';
 
+let numberOfFilms;
+
+
+function start() {
+  numberOfFilms = +prompt('Скільки фільмів Ви вже подивилися?', '');
+  while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
+    numberOfFilms = +prompt('Скільки фільмів Ви вже подивилися?', '');
+  }
+}
+start();
+
+const personalMoviesDB = {
+  count: numberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: false
+};
+
+function rememberMyFilms() {
+  if (personalMoviesDB.count < 10) {
+    console.log('переглянуто досить мало фільмів.');
+  } else if (personalMoviesDB.count >= 10 && personalMoviesDB.count < 30) {
+    console.log('Ви класичний глядач.');
+  }   else if (personalMoviesDB.count >= 30) {
+    console.log('Ви кіноман!');
+  }   else {
+    console.log('Сталася помилка!');
+  }
+}
+rememberMyFilms();
+
+
 /*
-const str = 'text text';
+for (let i = 0; i < 2; i++) {
+  const a = prompt('Один з останніх переглянутих фільмів?',''),
+      b = prompt('На скільки його оцінюєте?', '');
+  if (a != null && b != null && a !== '' && b !== '' && a.length < 50) {
+    personalMoviesDB.movies[a] = b;
 
-console.log(str.length);
+  } else {
+    console.log('error');
+    i--;
+  }
 
-const arr = [1, 2, 3, 4];
-console.log(arr.length);
+}
+console.log(personalMoviesDB);
 
-const fruit = 'Some Fruit';
-console.log(fruit.indexOf('Fruit'));
-
-const logg = 'Hello World!';
-console.log(logg.slice(6,11));*/
-
-/*
-const doggg = 'Hello World';
-console.log(doggg.substr(6, 5));*/
-
-
-/*  const s = 12.3;
-  console.log(Math.round(s));*/
-
-  const test = '12.2px';
-  console.log(parseInt(test));
-  console.log(parseFloat(test));
+*/
