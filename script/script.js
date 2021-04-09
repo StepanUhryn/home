@@ -33,19 +33,36 @@ function rememberMyFilms() {
 rememberMyFilms();
 
 
-/*
-for (let i = 0; i < 2; i++) {
-  const a = prompt('Один з останніх переглянутих фільмів?',''),
-      b = prompt('На скільки його оцінюєте?', '');
-  if (a != null && b != null && a !== '' && b !== '' && a.length < 50) {
-    personalMoviesDB.movies[a] = b;
+function  estimationMyFilms() {
+  for (let i = 0; i < 2; i++) {
+    const a = prompt('Один з останніх переглянутих фільмів?',''),
+        b = prompt('На скільки його оцінюєте?', '');
+    if (a != null && b != null && a !== '' && b !== '' && a.length < 50) {
+      personalMoviesDB.movies[a] = b;
 
-  } else {
-    console.log('error');
-    i--;
+    } else {
+      console.log('error');
+      i--;
+    }
+
   }
+}
+
+estimationMyFilms();
+
+
+
+function showMyDB (hidden) {
+   if (!hidden) {
+     console.log(personalMoviesDB);
+   }
 
 }
-console.log(personalMoviesDB);
+showMyDB(personalMoviesDB.privat);
 
-*/
+function writeYourGenres () {
+  for (let i = 1; i <= 3; i++) {
+   personalMoviesDB.genres[i-1] = prompt(`Ваш любимий жанр за номером ${i}`);
+  }
+}
+writeYourGenres();
