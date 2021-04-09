@@ -5,6 +5,7 @@
   setTimeout(function () {
     console.log('1');
   }, 500);
+
 }
 
 function second() {
@@ -15,10 +16,11 @@ first();
 second();*/
 
 function learnJS(lang, callback) {
-  console.log(`Я вчу ${lang}`);
-  callback();
+    console.log(`Я вчу ${lang}`);
+    callback();
 }
-learnJS('JavaScript', function () {
-  console.log('Я вивчив цей урок!')
-})
+function done() {
+  console.log('Я пройшов даний урок');
+}
 
+learnJS('JavaScript', done);
