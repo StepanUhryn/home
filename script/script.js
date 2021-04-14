@@ -1,96 +1,25 @@
 'use strict';
 
-// Task 1
+/*
+let number = Math.round(5.845*100)/100;
+console.log(number, typeof number);
 
-/*const userInfo = {
-    name: 'Wasja',
-    age: 40
-}*/
-
-// Task 2
-
-/*let userInfo = {
-    name: 'Wasja',
-    age: 30,
-    58: 'Значення властивості'
-}
-console.log(userInfo[58]);*/
-
-// Task 3
+let num = +number.toFixed(2);
+console.log(num, typeof num);*/
 /*
 
-let userInfo = {
-    name: 'Wasja',
-    age: 30
-}
-let user = userInfo;
-user.age = 45;
-console.log(userInfo.age);
-console.log(user.age);*/
-
-
-// Task 4
-/*
-
-let userInfo = {
-    name: 'Wasja',
-    age: 30,
-    showInfo() {
-        console.log(`${this.name}`);
-    }
-}
-let user = userInfo;
-userInfo = null;
-console.log(userInfo);
-user.showInfo();*/
-
-/*
-// Task 5
-let userInfo = {
-    name: 'Wasja',
-    age: 30
-}
-for (const key in userInfo) {
-    const value = userInfo[key];
-    console.log(value);
-}
+console.log(number.toFixed(1), typeof number);
+console.log(number.toFixed(2), typeof number);
 */
 
-//Task 6
 /*
+console.log(+number.toFixed(1), typeof number);
+console.log(+number.toFixed(2), typeof number);
+*/
 
-let userInfo = {
-    name: 'Wasja',
-    age: 40,
-    adress: {
-        city: 'Uzhorod'
-    }
-}
-for (const key in userInfo.adress) {
-    console.log(userInfo.adress[key]);
-}*/
+let num = 1.005 + Number.EPSILON;
+let num_1 = Math.round(num*100)/100;
+console.log(num_1);
 
-
-// Task 7
-/*
-
-const userInfo = {
-    name: 'Wasja',
-    age: 30,
-    'likes js': true
-}
-console.log(userInfo['likes js']);*/
-
-
-let dog = {};
-
-dog.name = 'Spiky';
-dog.age = 10;
-
-console.log(dog);
-
-dog.name = 'Liky';
-console.log(dog);
-
-delete dog.name;
-console.log(dog);
+console.log(num*100);
+console.log(Math.round(num*100));
