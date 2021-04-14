@@ -79,15 +79,22 @@ user.age = 20;
 console.log("об'єкт user ", user);
 console.log("об'єкт userInfo ",userInfo);*/
 
-
+/*
 let userInfo = {
     name: 'Wasja',
     age: 30,
-    sadress: {
+    adress: {
         city: 'Uzhorod',
         street: 'Sadova'
+    },
+    showInfo: function () {
+        console.log(`${this.name}, ${this.age} років. Адреса: м. ${this.adress.city}, вул. ${this.adress.street}.`)
     }
+  /!*  showInfo() {
+    console.log(`${userInfo.name}, ${userInfo.age} років. Адреса: ${userInfo.adress.city}, вул. ${userInfo.adress.street}.`);
+    }*!/
 }
+userInfo.showInfo();*/
 //console.log("об'єкт userInfo ",userInfo);
 //console.log('Властивість street: ', userInfo.adress.street);
 //console.log(userInfo?.adress?.street);
@@ -100,3 +107,9 @@ let userInfo = {
 }*/
 
 
+function UserInfo(name) {
+    this.name = name;
+    this.age = 30;
+}
+console.log(new UserInfo('Вася'));
+console.log(new UserInfo('Лена'));
