@@ -1,74 +1,66 @@
 'use strict'
 
-
 /*
-let arr = [1, 32, 4, 77, -55, 90];
-console.log(arr);
+let arr = ['Wasil', 'Іштван', 'Оля'];
+let newArr = arr;
+newArr.push("Петя");
+console.log(arr, arr.length)
 */
 
-/*arr.pop();
-console.log(arr);
 
-arr.push(333, 88,666);
-console.log(arr);*/
+/*const users = ['Ваня', 'Іштван'];
+//console.log(users);
+users.push('Оля');
+//console.log(users);
+/!*users[1] = 'Петя';
+console.log(users);*!/
 
-/*arr.shift();
-console.log(arr);*/
-/*
+for (let item of users) {
+        console.log(item);
+        if (item === 'Іштван') {
+            users.item = 'Петя';
+            console.log(item);
+        } else {
+            console.log('Не Іштван');
+        }
+    }
+console.log(users);*/
 
-arr.unshift(0, .5);
-console.log(arr);
-*/
+/*const users = ['Ваня', 'Іштван', 'Оля'];
+console.log(users);*/
 
-/*for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
-}*/
-//console.log(arr.length);
-/*for (let i of arr) {
-    console.log(i);
-}*/
+/*for (let i = 0; i < users.length; i++) {
+    if (users[i] === 'Іштван') {   //якщо значання елемента Іштван
+        users[i] = 'Петя'; // то замінюю його на Петю
+    } else {
 
-/*
-arr[10] = 0;
-console.log(arr.length);
-console.log(arr);
-*/
-/*
-arr.forEach(function (item, i, arr) {
-    console.log(`${i}: ${item} всередині масива ${arr}`);
-})*/
-
-/*
-const products = [5,4,3,2,1];
-products.sort(compareNu);
-console.log(products);
-
-function compareNu(a, b) {
-    return a-b;
+    }
+    console.log(users[i]);
 }
-*/
+console.log(users);*/
 
-/*
-const str = 'Wasja, Kolja, Olja, Igor';
-const arr = str.split(', ');
+/*users.shift();
+console.log(users);
 
-const arr_map = arr.map(function(elementName, index, array) {
-    return elementName[4];
-});
+users.unshift('Маша', 'Паша');
+console.log(users);*/
 
-console.log(arr);
-console.log(arr_map);*/
+/*let arr = ['Ваня', 'Іштван', 'Оля'];
+console.log('початковий масив', arr);
 
-/*let a = {};
-let b = [];
+let pos = arr.indexOf('Іштван');
+console.log(`індекс елемента Іштван: ${pos}`);
+let arrRemoved = arr.splice(pos, 1);
 
-console.log('a :', typeof a);
-console.log('b :', typeof b);
-
-if (Array.isArray(b)) {
-    console.log('massiv');
-}   else {
-    console.log('not massiv');
-}*/
+console.log('змінений масив ', arrRemoved);
+console.log(arr);*/
 
 
+/*let str = 'Ваня, Вітя, Едік';
+let strMassiv = str.split(', ');
+console.log(strMassiv);*/
+
+let arr = [9, 2, 8];
+let reduceValue = arr.reduce(function (previousValue, item, index, array) {
+    console.log(previousValue);
+})
