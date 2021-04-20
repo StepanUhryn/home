@@ -10,6 +10,7 @@ function start() {
 }
 start();
 
+
 const personalMoviesDB = {
   count: numberOfFilms,
   movies: {},
