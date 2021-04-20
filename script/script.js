@@ -2,7 +2,6 @@
 
 let numberOfFilms;
 
-
 function start() {
   numberOfFilms = +prompt('Скільки фільмів Ви вже подивилися?', '');
   while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
